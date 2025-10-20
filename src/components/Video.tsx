@@ -1,10 +1,11 @@
-// src/components/Video.tsx
 import React from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import introVideo from "@/assets/video/intro.mp4"; // nếu video ở src/assets/video
 
-const Video: React.FC = () => {
+const Video = () => {
   const { t } = useLanguage();
+
+  // 👉 Đặt link video mp4 trực tiếp tại đây:
+  const videoUrl = "https://res.cloudinary.com/movielover/video/upload/v1760934895/rbrakpgvbc1hbpowlhgl.mp4"; 
 
   return (
     <section
@@ -25,7 +26,7 @@ const Video: React.FC = () => {
           <div className="w-full max-w-5xl rounded-3xl overflow-hidden shadow-2xl border border-border bg-black/80">
             <div style={{ position: "relative", paddingTop: "56.25%" }}>
               <video
-                src={introVideo}
+                src={videoUrl}
                 className="absolute top-0 left-0 w-full h-full object-contain"
                 controls
                 playsInline
