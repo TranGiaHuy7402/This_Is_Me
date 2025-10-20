@@ -78,7 +78,7 @@ const translations: Record<Language, Translations> = {
     },
     video: {
       title: "Video Giới thiệu",
-      lead: "Video được làm từ các ảnh chụp từ ngày 23/10/2023 đến ngày 23/10/2025 tại Úc.",
+      lead: "",
       description:
         "Đây là cuộc sống thường ngày của tôi tại nước Úc xinh đẹp này. Hi vọng bạn có thể cảm nhận được niềm vui và hạnh phúc trong từng khoảnh khắc.",
     },
@@ -125,7 +125,7 @@ const translations: Record<Language, Translations> = {
     },
     video: {
       title: "Video Introduction",
-      lead: "This video was made by pictures taken from 23/10/2023 to 23/10/2025.",
+      lead: "",
       description:
         "This is my daily life in this beautiful Australia. Hope you can feel the joy and happiness in every moment.",
     },

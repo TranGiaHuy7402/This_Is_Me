@@ -5,7 +5,7 @@ const Video = () => {
   const { t } = useLanguage();
 
   // 👉 Đặt link video mp4 trực tiếp tại đây:
-  const videoUrl = "https://res.cloudinary.com/movielover/video/upload/v1760934895/rbrakpgvbc1hbpowlhgl.mp4"; 
+  const videoUrl = "https://res.cloudinary.com/movielover/video/upload/v1760937341/aq7umjvz301zs59uwjtv.mp4"; 
 
   return (
     <section
