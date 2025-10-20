@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import MusicToggle from "@/components/ui/MusicToggle"; // ✅ thêm import
+// import MusicToggle from "@/components/ui/MusicToggle"; // removed
 
 const queryClient = new QueryClient();
 
@@ -17,11 +17,7 @@ const App = () => (
         <Toaster />
         <Sonner />
 
-        {/* ✅ Nút bật/tắt nhạc — hiển thị nổi cố định */}
-        <div className="fixed right-4 bottom-4 z-50">
-          {/* Bạn có thể thay đổi file nhạc hoặc volume ở đây */}
-          <MusicToggle audioUrl="/audio/bg-music.mp3" defaultVolume={0.25} />
-        </div>
+        {/* MusicToggle removed - music UI is disabled */}
 
         {/* Router */}
         <BrowserRouter>

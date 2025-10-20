@@ -24,10 +24,15 @@ interface Translations {
   gallery: {
     title: string;
     subtitle: string;
-    // CHANGED: chỉ giữ description cho mỗi photo. Không có location/date nữa.
     photos: Array<{
       description: string;
     }>;
+  };
+  // ADDED: video section
+  video: {
+    title: string;
+    lead: string; // short lead under title (optional)
+    description: string; // longer paragraph below video
   };
   footer: {
     madeWith: string;
@@ -71,6 +76,12 @@ const translations: Record<Language, Translations> = {
         { description: "Đi dạo cùng chồng tôi ở bến cảng" },
       ],
     },
+    video: {
+      title: "Video Giới thiệu",
+      lead: "Video được ghi từ ngày 23/10/2023 đến ngày 23/10/2025 tại Úc.",
+      description:
+        "Đây là cuộc sống thường ngày của tôi tại nước Úc xinh đẹp này. Hi vọng bạn có thể cảm nhận được niềm vui và hạnh phúc trong từng khoảnh khắc.",
+    },
     footer: {
       madeWith: "nhân dịp ngày Phụ nữ Việt Nam",
       copyright:
@@ -111,6 +122,12 @@ const translations: Record<Language, Translations> = {
         { description: "On my way to the beach" },
         { description: "At the harbor with my husband" },
       ],
+    },
+    video: {
+      title: "Video Introduction",
+      lead: "This video was recorded from 23/10/2023 to 23/10/2025.",
+      description:
+        "This is my daily life in this beautiful Australia. Hope you can feel the joy and happiness in every moment.",
     },
     footer: {
       madeWith: "for Vietnamese Women's Day",
